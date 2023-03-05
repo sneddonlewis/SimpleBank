@@ -6,9 +6,11 @@
 
 #include <string>
 
-namespace SimpleBank {
-    class Greeter {
-        public:
+namespace SimpleBank
+{
+    class Greeter
+    {
+    public:
         std::string greeting();
     };
 }

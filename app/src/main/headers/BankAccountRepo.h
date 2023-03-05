@@ -10,14 +10,15 @@
 using std::vector;
 #include "BankAccount.h"
 
-class BankAccountRepo {
+class BankAccountRepo
+{
 private:
     vector<BankAccount> accounts;
+
 public:
-    BankAccountRepo()=default;
+    BankAccountRepo() = default;
     bool save(BankAccount account);
     BankAccount getOneByCardNumber(string accNum);
 };
 
-
-#endif //SIMPLEBANK_BANKACCOUNTREPO_H
+#endif // SIMPLEBANK_BANKACCOUNTREPO_H

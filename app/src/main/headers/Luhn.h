@@ -6,10 +6,11 @@
 
 #include <string>
 
-    class Luhn {
-        public:
-            static bool checkLuhnAlgorithm(std::string cardNumber);
-            static int generateLuhnCheckDigit(std::string cardNumber);
-    };
+class Luhn
+{
+public:
+    static bool checkLuhnAlgorithm(std::string cardNumber);
+    static int generateLuhnCheckDigit(std::string cardNumber);
+};
 
 #endif

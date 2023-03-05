@@ -5,19 +5,19 @@
 #ifndef SIMPLEBANK_MENU_H
 #define SIMPLEBANK_MENU_H
 
-
 #include "BankAccountService.h"
 
-class Menu {
+class Menu
+{
 private:
     BankAccountService service;
     int loginAttempt();
     void printMenu();
     void createAccount();
+
 public:
-    Menu(const BankAccountService& service);
+    Menu(const BankAccountService &service);
     int run();
 };
 
-
-#endif //SIMPLEBANK_MENU_H
+#endif // SIMPLEBANK_MENU_H

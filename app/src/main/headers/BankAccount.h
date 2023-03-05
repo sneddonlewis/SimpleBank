@@ -7,7 +7,8 @@
 #include <string>
 using std::string;
 
-class BankAccount {
+class BankAccount
+{
 private:
     string BIN;
     string accountNumber;
@@ -27,4 +28,4 @@ public:
 };
 #define SIMPLEBANK_BANKACCOUNT_H
 
-#endif //SIMPLEBANK_BANKACCOUNT_H
+#endif // SIMPLEBANK_BANKACCOUNT_H

@@ -5,7 +5,8 @@
 #include "app.h"
 #include <cassert>
 
-int main() {
+int main()
+{
     assert(true);
     return 0;
 }

@@ -8,6 +8,7 @@
 #include "BankAccount.h"
 #include "Menu.h"
 
-int main () {
+int main()
+{
     return Menu(BankAccountService(BankAccountRepo())).run();
 }

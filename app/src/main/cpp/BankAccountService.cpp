@@ -5,11 +5,13 @@
 #include "BankAccountService.h"
 #include "Luhn.h"
 
-BankAccountService::BankAccountService(const BankAccountRepo& repo) : repo(repo) {
+BankAccountService::BankAccountService(const BankAccountRepo &repo) : repo(repo)
+{
     count = 0;
 }
 
-BankAccount BankAccountService::createAccount() {
+BankAccount BankAccountService::createAccount()
+{
     count++;
     // TODO Decide if BIN is constant
     string bin = "4000";
@@ -25,6 +27,7 @@ BankAccount BankAccountService::createAccount() {
     return account;
 }
 
-BankAccount BankAccountService::getAccountByCardNumber(const string cardNumber) {
+BankAccount BankAccountService::getAccountByCardNumber(const string cardNumber)
+{
     return repo.getOneByCardNumber(cardNumber);
 }
