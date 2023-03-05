@@ -3,6 +3,7 @@
 //
 
 #include "BankAccountService.h"
+#include "Luhn.h"
 
 BankAccountService::BankAccountService(const BankAccountRepo& repo) : repo(repo) {
     count = 0;
@@ -15,7 +16,7 @@ BankAccount BankAccountService::createAccount() {
     string accNum = std::to_string(count);
     accNum.insert(0, 11 - accNum.length(), '0');
     // TODO Check digit algorithm
-    int check = 0;
+    int check = Luhn::generateLuhnCheckDigit(accNum);
     // TODO Generate PIN
     string pin = "1234";
     double balance = 0.0;
