@@ -24,6 +24,9 @@ gradle-app.setting
 # Cache of project
 .gradletasknamecache
 
+# Jetbrains stuff
+.idea
+
 # Eclipse Gradle plugin generated files
 # Eclipse Core
 .project
